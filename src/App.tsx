@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Button, Card } from './components';
-import { Alert } from './components/atoms/Alert';
+import { Button, Card, Alert, Badge } from './components';
 
 export default function App() {
   const [showAlert, setShowAlert] = useState(false);
@@ -47,6 +46,9 @@ export default function App() {
         description="You can put any children inside, like buttons, inputs, etc."
       >
         <Button label="Outline" variant="outline" />
+        <Badge label="New" variant="success" className="ml-2" />
+        <Badge label="Beta" variant="warning" className="ml-2" />
+        <Badge label="Deprecated" variant="danger" className="ml-2" />
       </Card>
     </div>
   );
