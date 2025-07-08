@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Button, Card, Alert, Badge } from './components';
+import { Button, Card, Alert, Badge, Input } from './components';
 
 export default function App() {
   const [showAlert, setShowAlert] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col gap-4 items-center justify-center bg-gray-100">
-      <h1 className="text-3xl font-bold">Bayani UI - Atomic</h1>
+      <h1 className="text-3xl font-bold">Bayani UI</h1>
       <p className="text-gray-700">
         This is a simple atomic design system built with React and Tailwind CSS.
       </p>
@@ -50,6 +50,11 @@ export default function App() {
         <Badge label="Beta" variant="warning" className="ml-2" />
         <Badge label="Deprecated" variant="danger" className="ml-2" />
       </Card>
+      <Input
+        placeholder="Type something..."
+        iconPosition="left"
+        className="w-64"
+      />
     </div>
   );
 }
