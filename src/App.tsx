@@ -13,8 +13,8 @@ export default function App() {
       <div className="flex gap-5">
         <div>
           <Button
-            label="Secondary"
-            variant="secondary"
+            label="Primary"
+            variant="primary"
             onClick={() => setShowAlert(true)}
           />
 
