@@ -30,8 +30,8 @@ export default function App() {
           )}
         </div>
         <Button
-          label="Secondary"
-          variant="secondary"
+          label="Primary"
+          variant="primary"
           onClick={() => alert('Secondary Clicked')}
         />
         <Button label="Danger" variant="danger" />
